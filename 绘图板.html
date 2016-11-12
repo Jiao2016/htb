@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/htb.css">
+    <script src="js/draw.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/htb.js"></script>
+</head>
+<body>
+    <div class="choosebox"></div>
+    <div class="choosebox-left">
+        <div class="ju">
+            画布颜色：
+            <input type="color" value="#ffffff" id="bgcolor">
+        </div>
+        <div class="ju">
+            形状：
+            <select name="" id="typechoose">
+                <option value="rect">矩形</option>
+                <option value="circle">圆</option>
+                <option value="line">线</option>
+            </select>
+        </div>
+        <div class="ju">
+            样式：
+            <select name="" id="choose2">
+                <option value="stroke">描边</option>
+                <option value="fill">填充</option>
+            </select>
+        </div>
+        <div class="ju">
+            颜色：
+            <input type="color" id="color">
+        </div>
+        <div class="ju">
+            粗细：
+            <input type="number" id="number" min="1" max="100" value="1">
+        </div>
+        <div class="ju">
+            多边形：
+            <input type="checkbox" id="poly"><br>
+            边数：
+            <input type="number" id="linenum" min="3" max="10" value="3">
+        </div>
+        <div class="ju">
+            铅笔：<input type="checkbox" id="pencil"><br>
+        </div>
+        <div class="ju">
+            橡皮：<input type="checkbox" id="eraser"><br>
+        </div>
+        <div class="ju">
+            剪切：<input type="checkbox" id="cut"><br>
+        </div>
+        <div class="ju">
+            复制：<input type="checkbox" id="copy"><br>
+        </div>
+    </div>
+    <div class="choosebox-right">
+        <input type="button" class="btn creat" value="新建">
+        <input type="button" class="btn back" value="撤销">
+        <input type="button" class="btn save" value="保存">
+        <input type="button" class="btn clear" value="清空">
+    </div>
+    <canvas width="800" height="500" class="canvas"></canvas>
+</body>
+</html>
